@@ -2,7 +2,7 @@ const Reader = require("./lib/utils/Reader");
 const ExplorerService = require("./lib/services/ExplorerService");
 const FizzbuzzService = require("./lib/services/FizzbuzzService");
 
-const explorers = Reader.readJsonFile("explorers.json");
+const explorers = Reader.readJsonFile("./app/explorers.json");
 //console.log(explorers)
 
 console.log(ExplorerService.filterByMission(explorers, "node"));
